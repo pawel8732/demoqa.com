@@ -68,7 +68,10 @@ public class DemoInteractions {
 		droppableBtn.click();
 		move.dragAndDrop(dragItm, dropItm).build().perform();
 		draggableBtn.click();
-		move.dragAndDropBy(drag2Itm, 500, 250).build().perform();
+		for (int i = 0;i<100;i+=20) {						
+			move.dragAndDropBy(drag2Itm, 50+i, 50+i).build().perform();
+			DemoQA.sleep(1);
+		}
 	}
 
 }

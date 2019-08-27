@@ -18,7 +18,14 @@ public class DemoQATest {
 	@Test
 	public void demoTest() {
 		DemoInteractions di = new DemoInteractions(driver);
-		di.interactionsSection();
+		di.interactionsSection();		
+		DemoWidgets2 dw2 = new DemoWidgets2(driver);
+		dw2.widgets2Section();
+		DemoWidgets dw = new DemoWidgets(driver);
+		dw.widgetsSection();
+		DemoWidgets3 dw3 = new DemoWidgets3(driver);
+		dw3.widgets3Section();
+		
 	}
 	
 	@After
